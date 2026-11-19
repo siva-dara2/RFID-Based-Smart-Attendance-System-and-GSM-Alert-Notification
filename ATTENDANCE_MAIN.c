@@ -122,7 +122,7 @@ void GSM_SEND_MSG(unsigned char *num,unsigned char *str){
 	delay_ms(5000);	
 }
 
-/*void GSM_INIT(void){
+void GSM_INIT(void){
 	GSM_COMMAND("AT\r\n");                       
 	delay_ms(1000);
 	GSM_COMMAND("ATE0\r\n");                    
@@ -135,7 +135,7 @@ void GSM_SEND_MSG(unsigned char *num,unsigned char *str){
 	delay_ms(1000);
 	GSM_COMMAND("AT+CSMP=17,167,0,0\r\n");       
 	delay_ms(1000);
-}*/
+}
 void GSM_INIT(void){
 	GSM_COMMAND("AT\r\n");           delay_ms(1000);
 	GSM_COMMAND("ATE0\r\n");         delay_ms(1000);
